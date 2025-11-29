@@ -8,8 +8,8 @@ const User = require("./login_panel/models/User");
 const app = express();
 
 mongoose.connect("mongodb://127.0.0.1:27017/loginDB")
-.then(() => console.log("✅ MongoDB connected"))
-.catch((err) => console.log("❌ Database Error:", err));
+.then(() => console.log("MongoDB connected"))
+.catch((err) => console.log("Database Error:", err));
 
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
